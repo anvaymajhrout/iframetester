@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Code Tester</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="top">
+            <div class="circle">
+                <div class="circle2 red"></div>
+            </div>
+            <div class="circle">
+                <div class="circle2 yellow"></div>
+            </div>
+            <div class="circle">
+                <div class="circle2 green"></div>
+            </div>
+            <div class="header" id="title2">Iframe Code Tester</div>
+        </div>
+
+        <div class="code-container">
+            <textarea id="code" placeholder="Enter your iframe code here..."></textarea>
+        </div>
+
+        <button class="button" onclick="openIframe()">Test Iframe</button>
+        <button class="button" onclick="resetIframe()">Reset</button>
+    </div>
+
+    <div id="iframe-popup" class="iframe-popup">
+        <div class="iframe-content">
+            <button class="close-button" onclick="closeIframe()">Close</button>
+            <div id="iframe-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

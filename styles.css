@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #24233b;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0px 10px 10px rgb(73, 70, 92);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 10px black;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.circle2 {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.header {
+    margin: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: white;
+    padding-left: 20px;
+    font-size: 15px;
+    flex: 1;
+}
+
+.code-container {
+    text-align: center;
+    width: 100%;
+    flex: 2;
+}
+
+#code {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    background-color: rgb(73, 70, 92);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+#code:focus {
+    outline: none !important;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4c9beb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #3a7cbf;
+}
+
+.iframe-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.iframe-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close-button {
+    background-color: #ff605c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #e54e4b;
+}
